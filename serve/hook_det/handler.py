@@ -1,3 +1,4 @@
+#coding=utf-8
 """
 脱钩检测 model server
 """
@@ -116,7 +117,7 @@ def handle(data, context):
 
 def draw_img(image, det):
     lw = max(round(sum(image.shape) / 2 * 0.003), 2)
-    for *xyxy, conf, cls in reversed(det):
+    for xyxy, conf, cls in reversed(det):
         box = xyxy
         p1, p2 = (int(box[0]), int(box[1])), (int(box[2]), int(box[3]))
         cv2.rectangle(image, p1, p2, (0,0,255), thickness=lw, lineType=cv2.LINE_AA)
@@ -134,4 +135,4 @@ if __name__ == '__main__':
     data = [{"body": image_bytes}]
     data = handle(data, ctx)
     det = eval(data[0]['results']) 
-    draw_img(cv2.imread(path), det)
+    #draw_img(cv2.imread(path), det)
