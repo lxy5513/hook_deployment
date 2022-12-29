@@ -10,18 +10,10 @@ import os
 import torch
 import numpy as np
 import requests
-from yolov6.layers.common import DetectBackend
-from yolov6.utils.nms import non_max_suppression
 import argparse
 import ipdb;pdb=ipdb.set_trace
+import openvino
 
-CONFIG = {'weights': 'last_ckpt.pt', 'source': '15.png', 'conf_thres': 0.2, 'iou_thres': 0.2, 'max_det': 1000, 'device': 'cpu', 'save_txt': False, 'save_img': True, 'save_dir': None, 'view_img': False, 'classes': None, 'agnostic_nms': False, 'project': 'runs/inference', 'name': 'exp', 'hide_labels': False, 'hide_conf': False, 'half': False}
-
-ROOT = os.getcwd()
-if str(ROOT) not in sys.path:
-    sys.path.append(str(ROOT))
-from yolov6.core.inferer import Inferer
-from yolov6.data.data_augment import letterbox
 
 
 class HookDet(object):
@@ -34,30 +26,27 @@ class HookDet(object):
         self.initialized = False
         self.device = "cpu"
 
-    def model_switch(self, model, img_size):
-        ''' Model switch to deploy status '''
-        from yolov6.layers.common import RepVGGBlock
-        for layer in model.modules():
-            if isinstance(layer, RepVGGBlock):
-                layer.switch_to_deploy()
     
+    def model_load(self):
+        ''' Model switch to deploy status '''
+        from pyopenvino.inference_engine import IECore
+        ie = IECore()                                        # Create core object
+        net = ie.read_network(model+'.xml', model+'.bin')    # Read model file
+        print('inputs:', net.inputs)
+        print('outputs:', net.outputs)
+        output_node_name = net.outputs[0]['name']
+        exenet = ie.load_network(net, 'CPU') 
+        return exenet
+
     def initialize(self, ctx):
         self.initialized = True
-        weights="last_ckpt.pt"
-        self.model = DetectBackend(weights, device=self.device)
-        # Switch model to deploy status
-        self.model_switch(self.model.model, self.img_size)
-        # Half precision
-        if self.half:
-            self.model.model.half()
-        self.stride = self.model.stride
+        self.exenet = self.model_load()
         
     def preprocess(self, data):
         image = data[0].get("body")
         image = cv2.imdecode(np.frombuffer(image, np.uint8), -1)
         image_rgb = np.array(image)
         self.image = image_rgb
-        print('stride: ', self.stride)
         img, img_src = self.precess_image(self.image, self.img_size, self.stride, self.half)
         img = img.to(self.device)
         return img, img_src
@@ -75,19 +64,22 @@ class HookDet(object):
 
     def inference(self, res):
         img, img_src = res
-        if len(img.shape) == 3:
-            img = img[None]
-            # expand for batch dim
-        with torch.no_grad():
-            pred_results = self.model(img)
-        pdb()
-        det = non_max_suppression(pred_results, self.conf_thres, self.iou_thres, None, False, max_det=10)[0]
-        det[:, :4] = self.rescale(img.shape[2:], det[:, :4], img_src.shape).round()
+        inblob = img
+        exenet = self.exenet
+        exenet.kernel_type = 'special'    # Set kernel implementation type ('naive', 'numpy' or 'special')
+        atime = 0
+        nitr = 1
+        print('Kernel type:', exenet.kernel_type)
+        for i in range(nitr):
+            stime = time.time()
+            res = exenet.infer({'data':inblob}, verbose=True)    # Run inference
+            etime = time.time()
+            atime += etime-stime
+        print(atime/nitr, 'sec/inf')
 
-        res = det.cpu().numpy().tolist()
-        results = {"results": str(res)}
-        print(results)
-        return [results]
+        m = np.argsort(res[output_node_name][0])[::-1]    # Sort results
+        print('Result:', m[:10])
+
 
     @staticmethod
     def rescale(ori_shape, boxes, target_shape):
@@ -136,4 +128,4 @@ if __name__ == '__main__':
     data = [{"body": image_bytes}]
     data = handle(data, ctx)
     det = eval(data[0]['results']) 
-    draw_img(cv2.imread(path), det)
+    # draw_img(cv2.imread(path), det)
