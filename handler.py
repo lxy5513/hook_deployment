@@ -161,7 +161,7 @@ def draw_img(image, det):
 if __name__ == '__main__':
     path = '15.png'
     import tqdm
-    for _ in tqdm.tqdm(range(200)):
+    for _ in tqdm.tqdm(range(20)):
         f = open(path, 'rb')
         image_bytes = f.read()
         prop = {"model_dir": {}, "gpu_id": 0}
