@@ -1,0 +1,823 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="image_arrays" output_port_id="image_arrays" />
+		<IR name="image_arrays" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="backbone.stem.rbr_reparam.weight" output_port_id="backbone.stem.rbr_reparam.weight" />
+		<IR name="backbone.stem.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/stem/rbr_reparam/Conv" output_port_id="/backbone/stem/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/stem/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/stem/nonlinearity/Relu" output_port_id="/backbone/stem/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/stem/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_2.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_2.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_2.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_2/ERBlock_2.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_2/ERBlock_2.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_2.1.conv1.rbr_reparam.weight" output_port_id="backbone.ERBlock_2.1.conv1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_2.1.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.1/conv1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_2/ERBlock_2.1/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.1/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.1/conv1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_2/ERBlock_2.1/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.1/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_2.1.block.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_2.1.block.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_2.1.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_2/ERBlock_2.1/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_3.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_3.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_3.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_3/ERBlock_3.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_3/ERBlock_3.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_3.1.conv1.rbr_reparam.weight" output_port_id="backbone.ERBlock_3.1.conv1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_3.1.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/conv1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/conv1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_3.1.block.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_3.1.block.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_3.1.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_3.1.block.1.rbr_reparam.weight" output_port_id="backbone.ERBlock_3.1.block.1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_3.1.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_3.1.block.2.rbr_reparam.weight" output_port_id="backbone.ERBlock_3.1.block.2.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_3.1.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/nonlinearity/Relu" output_port_id="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_3/ERBlock_3.1/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.conv1.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.conv1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/conv1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/conv1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.block.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.block.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.block.1.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.block.1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.block.2.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.block.2.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.block.3.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.block.3.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.block.3.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.3/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_4.1.block.4.rbr_reparam.weight" output_port_id="backbone.ERBlock_4.1.block.4.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_4.1.block.4.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/nonlinearity/Relu" output_port_id="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_4/ERBlock_4.1/block/block.4/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_5.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_5.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_5.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_5/ERBlock_5.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_5/ERBlock_5.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_5.1.conv1.rbr_reparam.weight" output_port_id="backbone.ERBlock_5.1.conv1.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_5.1.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.1/conv1/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_5/ERBlock_5.1/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.1/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.1/conv1/nonlinearity/Relu" output_port_id="/backbone/ERBlock_5/ERBlock_5.1/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.1/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_5.1.block.0.rbr_reparam.weight" output_port_id="backbone.ERBlock_5.1.block.0.rbr_reparam.weight" />
+		<IR name="backbone.ERBlock_5.1.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/rbr_reparam/Conv" output_port_id="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/nonlinearity/Relu" output_port_id="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.1/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_5.2.cv1.conv.weight" output_port_id="backbone.ERBlock_5.2.cv1.conv.weight" />
+		<IR name="backbone.ERBlock_5.2.cv1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/cv1/conv/Conv" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/cv1/conv/Conv_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/cv1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/cv1/act/Relu" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/cv1/act/Relu_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/cv1/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/m/MaxPool" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/m/MaxPool_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/m/MaxPool" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/m_1/MaxPool" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/m_1/MaxPool_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/m_1/MaxPool" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/m_2/MaxPool" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/m_2/MaxPool_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/m_2/MaxPool" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/Concat" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/Concat_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/Concat" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="backbone.ERBlock_5.2.cv2.conv.weight" output_port_id="backbone.ERBlock_5.2.cv2.conv.weight" />
+		<IR name="backbone.ERBlock_5.2.cv2.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/cv2/conv/Conv" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/cv2/conv/Conv_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/cv2/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/ERBlock_5/ERBlock_5.2/cv2/act/Relu" output_port_id="/backbone/ERBlock_5/ERBlock_5.2/cv2/act/Relu_output_0" />
+		<IR name="/backbone/ERBlock_5/ERBlock_5.2/cv2/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.reduce_layer0.conv.weight" output_port_id="neck.reduce_layer0.conv.weight" />
+		<IR name="neck.reduce_layer0.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/reduce_layer0/conv/Conv" output_port_id="/neck/reduce_layer0/conv/Conv_output_0" />
+		<IR name="/neck/reduce_layer0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/reduce_layer0/act/Relu" output_port_id="/neck/reduce_layer0/act/Relu_output_0" />
+		<IR name="/neck/reduce_layer0/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.upsample0.upsample_transpose.weight" output_port_id="neck.upsample0.upsample_transpose.weight" />
+		<IR name="neck.upsample0.upsample_transpose.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/upsample0/upsample_transpose/ConvTranspose" output_port_id="/neck/upsample0/upsample_transpose/ConvTranspose_output_0" />
+		<IR name="/neck/upsample0/upsample_transpose/ConvTranspose" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Concat" output_port_id="/neck/Concat_output_0" />
+		<IR name="/neck/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p4.conv1.rbr_reparam.weight" output_port_id="neck.Rep_p4.conv1.rbr_reparam.weight" />
+		<IR name="neck.Rep_p4.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/conv1/rbr_reparam/Conv" output_port_id="/neck/Rep_p4/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p4/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/conv1/nonlinearity/Relu" output_port_id="/neck/Rep_p4/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p4/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p4.block.0.rbr_reparam.weight" output_port_id="neck.Rep_p4.block.0.rbr_reparam.weight" />
+		<IR name="neck.Rep_p4.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.0/rbr_reparam/Conv" output_port_id="/neck/Rep_p4/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p4/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.0/nonlinearity/Relu" output_port_id="/neck/Rep_p4/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p4/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p4.block.1.rbr_reparam.weight" output_port_id="neck.Rep_p4.block.1.rbr_reparam.weight" />
+		<IR name="neck.Rep_p4.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.1/rbr_reparam/Conv" output_port_id="/neck/Rep_p4/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p4/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.1/nonlinearity/Relu" output_port_id="/neck/Rep_p4/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p4/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p4.block.2.rbr_reparam.weight" output_port_id="neck.Rep_p4.block.2.rbr_reparam.weight" />
+		<IR name="neck.Rep_p4.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.2/rbr_reparam/Conv" output_port_id="/neck/Rep_p4/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p4/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p4/block/block.2/nonlinearity/Relu" output_port_id="/neck/Rep_p4/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p4/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.reduce_layer1.conv.weight" output_port_id="neck.reduce_layer1.conv.weight" />
+		<IR name="neck.reduce_layer1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/reduce_layer1/conv/Conv" output_port_id="/neck/reduce_layer1/conv/Conv_output_0" />
+		<IR name="/neck/reduce_layer1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/reduce_layer1/act/Relu" output_port_id="/neck/reduce_layer1/act/Relu_output_0" />
+		<IR name="/neck/reduce_layer1/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.upsample1.upsample_transpose.weight" output_port_id="neck.upsample1.upsample_transpose.weight" />
+		<IR name="neck.upsample1.upsample_transpose.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/upsample1/upsample_transpose/ConvTranspose" output_port_id="/neck/upsample1/upsample_transpose/ConvTranspose_output_0" />
+		<IR name="/neck/upsample1/upsample_transpose/ConvTranspose" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Concat_1" output_port_id="/neck/Concat_1_output_0" />
+		<IR name="/neck/Concat_1" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p3.conv1.rbr_reparam.weight" output_port_id="neck.Rep_p3.conv1.rbr_reparam.weight" />
+		<IR name="neck.Rep_p3.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/conv1/rbr_reparam/Conv" output_port_id="/neck/Rep_p3/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p3/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/conv1/nonlinearity/Relu" output_port_id="/neck/Rep_p3/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p3/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p3.block.0.rbr_reparam.weight" output_port_id="neck.Rep_p3.block.0.rbr_reparam.weight" />
+		<IR name="neck.Rep_p3.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.0/rbr_reparam/Conv" output_port_id="/neck/Rep_p3/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p3/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.0/nonlinearity/Relu" output_port_id="/neck/Rep_p3/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p3/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p3.block.1.rbr_reparam.weight" output_port_id="neck.Rep_p3.block.1.rbr_reparam.weight" />
+		<IR name="neck.Rep_p3.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.1/rbr_reparam/Conv" output_port_id="/neck/Rep_p3/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p3/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.1/nonlinearity/Relu" output_port_id="/neck/Rep_p3/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p3/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_p3.block.2.rbr_reparam.weight" output_port_id="neck.Rep_p3.block.2.rbr_reparam.weight" />
+		<IR name="neck.Rep_p3.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.2/rbr_reparam/Conv" output_port_id="/neck/Rep_p3/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_p3/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_p3/block/block.2/nonlinearity/Relu" output_port_id="/neck/Rep_p3/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_p3/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.stems.0.conv.weight" output_port_id="detect.stems.0.conv.weight" />
+		<IR name="detect.stems.0.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/stems.0/conv/Conv" output_port_id="/detect/stems.0/conv/Conv_output_0" />
+		<IR name="/detect/stems.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/stems.0/act/Mul" output_port_id="/detect/stems.0/act/Mul_output_0" />
+		<IR name="/detect/stems.0/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_convs.0.conv.weight" output_port_id="detect.reg_convs.0.conv.weight" />
+		<IR name="detect.reg_convs.0.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.0/conv/Conv" output_port_id="/detect/reg_convs.0/conv/Conv_output_0" />
+		<IR name="/detect/reg_convs.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.0/act/Mul" output_port_id="/detect/reg_convs.0/act/Mul_output_0" />
+		<IR name="/detect/reg_convs.0/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_preds.0.weight" output_port_id="detect.reg_preds.0.weight" />
+		<IR name="detect.reg_preds.0.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_preds.0/Conv" output_port_id="/detect/reg_preds.0/Conv_output_0" />
+		<IR name="/detect/reg_preds.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_13" output_port_id="/detect/Constant_13_output_0" />
+		<IR name="/detect/Constant_13" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_4" output_port_id="/detect/Reshape_4_output_0" />
+		<IR name="/detect/Reshape_4" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.downsample2.conv.weight" output_port_id="neck.downsample2.conv.weight" />
+		<IR name="neck.downsample2.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/downsample2/conv/Conv" output_port_id="/neck/downsample2/conv/Conv_output_0" />
+		<IR name="/neck/downsample2/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/downsample2/act/Relu" output_port_id="/neck/downsample2/act/Relu_output_0" />
+		<IR name="/neck/downsample2/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/neck/Concat_2" output_port_id="/neck/Concat_2_output_0" />
+		<IR name="/neck/Concat_2" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n3.conv1.rbr_reparam.weight" output_port_id="neck.Rep_n3.conv1.rbr_reparam.weight" />
+		<IR name="neck.Rep_n3.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/conv1/rbr_reparam/Conv" output_port_id="/neck/Rep_n3/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n3/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/conv1/nonlinearity/Relu" output_port_id="/neck/Rep_n3/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n3/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n3.block.0.rbr_reparam.weight" output_port_id="neck.Rep_n3.block.0.rbr_reparam.weight" />
+		<IR name="neck.Rep_n3.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.0/rbr_reparam/Conv" output_port_id="/neck/Rep_n3/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n3/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.0/nonlinearity/Relu" output_port_id="/neck/Rep_n3/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n3/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n3.block.1.rbr_reparam.weight" output_port_id="neck.Rep_n3.block.1.rbr_reparam.weight" />
+		<IR name="neck.Rep_n3.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.1/rbr_reparam/Conv" output_port_id="/neck/Rep_n3/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n3/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.1/nonlinearity/Relu" output_port_id="/neck/Rep_n3/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n3/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n3.block.2.rbr_reparam.weight" output_port_id="neck.Rep_n3.block.2.rbr_reparam.weight" />
+		<IR name="neck.Rep_n3.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.2/rbr_reparam/Conv" output_port_id="/neck/Rep_n3/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n3/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n3/block/block.2/nonlinearity/Relu" output_port_id="/neck/Rep_n3/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n3/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.stems.1.conv.weight" output_port_id="detect.stems.1.conv.weight" />
+		<IR name="detect.stems.1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/stems.1/conv/Conv" output_port_id="/detect/stems.1/conv/Conv_output_0" />
+		<IR name="/detect/stems.1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/stems.1/act/Mul" output_port_id="/detect/stems.1/act/Mul_output_0" />
+		<IR name="/detect/stems.1/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_convs.1.conv.weight" output_port_id="detect.reg_convs.1.conv.weight" />
+		<IR name="detect.reg_convs.1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.1/conv/Conv" output_port_id="/detect/reg_convs.1/conv/Conv_output_0" />
+		<IR name="/detect/reg_convs.1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.1/act/Mul" output_port_id="/detect/reg_convs.1/act/Mul_output_0" />
+		<IR name="/detect/reg_convs.1/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_preds.1.weight" output_port_id="detect.reg_preds.1.weight" />
+		<IR name="detect.reg_preds.1.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_preds.1/Conv" output_port_id="/detect/reg_preds.1/Conv_output_0" />
+		<IR name="/detect/reg_preds.1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_15" output_port_id="/detect/Constant_15_output_0" />
+		<IR name="/detect/Constant_15" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_6" output_port_id="/detect/Reshape_6_output_0" />
+		<IR name="/detect/Reshape_6" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.downsample1.conv.weight" output_port_id="neck.downsample1.conv.weight" />
+		<IR name="neck.downsample1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/downsample1/conv/Conv" output_port_id="/neck/downsample1/conv/Conv_output_0" />
+		<IR name="/neck/downsample1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/downsample1/act/Relu" output_port_id="/neck/downsample1/act/Relu_output_0" />
+		<IR name="/neck/downsample1/act/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/neck/Concat_3" output_port_id="/neck/Concat_3_output_0" />
+		<IR name="/neck/Concat_3" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n4.conv1.rbr_reparam.weight" output_port_id="neck.Rep_n4.conv1.rbr_reparam.weight" />
+		<IR name="neck.Rep_n4.conv1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/conv1/rbr_reparam/Conv" output_port_id="/neck/Rep_n4/conv1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n4/conv1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/conv1/nonlinearity/Relu" output_port_id="/neck/Rep_n4/conv1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n4/conv1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n4.block.0.rbr_reparam.weight" output_port_id="neck.Rep_n4.block.0.rbr_reparam.weight" />
+		<IR name="neck.Rep_n4.block.0.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.0/rbr_reparam/Conv" output_port_id="/neck/Rep_n4/block/block.0/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n4/block/block.0/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.0/nonlinearity/Relu" output_port_id="/neck/Rep_n4/block/block.0/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n4/block/block.0/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n4.block.1.rbr_reparam.weight" output_port_id="neck.Rep_n4.block.1.rbr_reparam.weight" />
+		<IR name="neck.Rep_n4.block.1.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.1/rbr_reparam/Conv" output_port_id="/neck/Rep_n4/block/block.1/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n4/block/block.1/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.1/nonlinearity/Relu" output_port_id="/neck/Rep_n4/block/block.1/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n4/block/block.1/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="neck.Rep_n4.block.2.rbr_reparam.weight" output_port_id="neck.Rep_n4.block.2.rbr_reparam.weight" />
+		<IR name="neck.Rep_n4.block.2.rbr_reparam.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.2/rbr_reparam/Conv" output_port_id="/neck/Rep_n4/block/block.2/rbr_reparam/Conv_output_0" />
+		<IR name="/neck/Rep_n4/block/block.2/rbr_reparam/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/neck/Rep_n4/block/block.2/nonlinearity/Relu" output_port_id="/neck/Rep_n4/block/block.2/nonlinearity/Relu_output_0" />
+		<IR name="/neck/Rep_n4/block/block.2/nonlinearity/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.stems.2.conv.weight" output_port_id="detect.stems.2.conv.weight" />
+		<IR name="detect.stems.2.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/stems.2/conv/Conv" output_port_id="/detect/stems.2/conv/Conv_output_0" />
+		<IR name="/detect/stems.2/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/stems.2/act/Mul" output_port_id="/detect/stems.2/act/Mul_output_0" />
+		<IR name="/detect/stems.2/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_convs.2.conv.weight" output_port_id="detect.reg_convs.2.conv.weight" />
+		<IR name="detect.reg_convs.2.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.2/conv/Conv" output_port_id="/detect/reg_convs.2/conv/Conv_output_0" />
+		<IR name="/detect/reg_convs.2/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/reg_convs.2/act/Mul" output_port_id="/detect/reg_convs.2/act/Mul_output_0" />
+		<IR name="/detect/reg_convs.2/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.reg_preds.2.weight" output_port_id="detect.reg_preds.2.weight" />
+		<IR name="detect.reg_preds.2.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/reg_preds.2/Conv" output_port_id="/detect/reg_preds.2/Conv_output_0" />
+		<IR name="/detect/reg_preds.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_17" output_port_id="/detect/Constant_17_output_0" />
+		<IR name="/detect/Constant_17" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_8" output_port_id="/detect/Reshape_8_output_0" />
+		<IR name="/detect/Reshape_8" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Concat_5" output_port_id="/detect/Concat_5_output_0" />
+		<IR name="/detect/Concat_5" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/detect/Transpose_1" output_port_id="/detect/Transpose_1_output_0" />
+		<IR name="/detect/Transpose_1" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Split" output_port_id="/detect/Split_output_0" />
+		<IR name="/detect/Split" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/detect/Split" output_port_id="/detect/Split_output_1" />
+		<IR name="/detect/Split" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/detect/Sub" output_port_id="/detect/Sub_output_0" />
+		<IR name="/detect/Sub" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Add" output_port_id="/detect/Add_output_0" />
+		<IR name="/detect/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Add_1" output_port_id="/detect/Add_1_output_0" />
+		<IR name="/detect/Add_1" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Div" output_port_id="/detect/Div_output_0" />
+		<IR name="/detect/Div" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Sub_1" output_port_id="/detect/Sub_1_output_0" />
+		<IR name="/detect/Sub_1" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Concat_6" output_port_id="/detect/Concat_6_output_0" />
+		<IR name="/detect/Concat_6" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Mul" output_port_id="/detect/Mul_output_0" />
+		<IR name="/detect/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_20" output_port_id="/detect/Constant_20_output_0" />
+		<IR name="/detect/Constant_20" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="detect.cls_convs.0.conv.weight" output_port_id="detect.cls_convs.0.conv.weight" />
+		<IR name="detect.cls_convs.0.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.0/conv/Conv" output_port_id="/detect/cls_convs.0/conv/Conv_output_0" />
+		<IR name="/detect/cls_convs.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.0/act/Mul" output_port_id="/detect/cls_convs.0/act/Mul_output_0" />
+		<IR name="/detect/cls_convs.0/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.cls_preds.0.weight" output_port_id="detect.cls_preds.0.weight" />
+		<IR name="detect.cls_preds.0.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_preds.0/Conv" output_port_id="/detect/cls_preds.0/Conv_output_0" />
+		<IR name="/detect/cls_preds.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Sigmoid" output_port_id="/detect/Sigmoid_output_0" />
+		<IR name="/detect/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_12" output_port_id="/detect/Constant_12_output_0" />
+		<IR name="/detect/Constant_12" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_3" output_port_id="/detect/Reshape_3_output_0" />
+		<IR name="/detect/Reshape_3" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="detect.cls_convs.1.conv.weight" output_port_id="detect.cls_convs.1.conv.weight" />
+		<IR name="detect.cls_convs.1.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.1/conv/Conv" output_port_id="/detect/cls_convs.1/conv/Conv_output_0" />
+		<IR name="/detect/cls_convs.1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.1/act/Mul" output_port_id="/detect/cls_convs.1/act/Mul_output_0" />
+		<IR name="/detect/cls_convs.1/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.cls_preds.1.weight" output_port_id="detect.cls_preds.1.weight" />
+		<IR name="detect.cls_preds.1.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_preds.1/Conv" output_port_id="/detect/cls_preds.1/Conv_output_0" />
+		<IR name="/detect/cls_preds.1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Sigmoid_1" output_port_id="/detect/Sigmoid_1_output_0" />
+		<IR name="/detect/Sigmoid_1" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_14" output_port_id="/detect/Constant_14_output_0" />
+		<IR name="/detect/Constant_14" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_5" output_port_id="/detect/Reshape_5_output_0" />
+		<IR name="/detect/Reshape_5" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="detect.cls_convs.2.conv.weight" output_port_id="detect.cls_convs.2.conv.weight" />
+		<IR name="detect.cls_convs.2.conv.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.2/conv/Conv" output_port_id="/detect/cls_convs.2/conv/Conv_output_0" />
+		<IR name="/detect/cls_convs.2/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/cls_convs.2/act/Mul" output_port_id="/detect/cls_convs.2/act/Mul_output_0" />
+		<IR name="/detect/cls_convs.2/act/Mul" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="detect.cls_preds.2.weight" output_port_id="detect.cls_preds.2.weight" />
+		<IR name="detect.cls_preds.2.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/cls_preds.2/Conv" output_port_id="/detect/cls_preds.2/Conv_output_0" />
+		<IR name="/detect/cls_preds.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Sigmoid_2" output_port_id="/detect/Sigmoid_2_output_0" />
+		<IR name="/detect/Sigmoid_2" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/detect/Constant_16" output_port_id="/detect/Constant_16_output_0" />
+		<IR name="/detect/Constant_16" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/detect/Reshape_7" output_port_id="/detect/Reshape_7_output_0" />
+		<IR name="/detect/Reshape_7" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/detect/Concat_4" output_port_id="/detect/Concat_4_output_0" />
+		<IR name="/detect/Concat_4" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/detect/Transpose" output_port_id="/detect/Transpose_output_0" />
+		<IR name="/detect/Transpose" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="outputs" output_port_id="outputs" />
+		<IR name="outputs" output_port_id="3" />
+	</map>
+</mapping>

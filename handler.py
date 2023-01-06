@@ -69,8 +69,13 @@ class HookDet(object):
         self.device = "cpu"
 
     def model_load(self):
+<<<<<<< HEAD
         XML_PATH = "best_stop_aug_ckpt.xml"
         BIN_PATH = "best_stop_aug_ckpt.bin"
+=======
+        XML_PATH = "models/best_stop_aug_ckpt.xml"
+        BIN_PATH = "models/best_stop_aug_ckpt.bin"
+>>>>>>> 89f8e2def097c7fec7acac0ad66b13800a76d8ad
         ie_core_handler = IECore()
         network = ie_core_handler.read_network(model=XML_PATH, weights=BIN_PATH)
         self.executable_network = ie_core_handler.load_network(network, device_name='CPU', num_requests=1)
