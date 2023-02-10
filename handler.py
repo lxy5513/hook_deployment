@@ -1,5 +1,8 @@
 """
 脱钩检测 model server
+返回值：
+    info：代表算法信息
+    result: 0:hook_absent, 1: hook_exist, 2: no car
 """
 import sys
 import time
@@ -69,8 +72,8 @@ class HookDet(object):
         self.device = "cpu"
 
     def model_load(self):
-        XML_PATH = "models/best_stop_aug_ckpt.xml"
-        BIN_PATH = "models/best_stop_aug_ckpt.bin"
+        XML_PATH = "serve/best_stop_aug_ckpt.xml"
+        BIN_PATH = "serve/best_stop_aug_ckpt.bin"
         ie_core_handler = IECore()
         network = ie_core_handler.read_network(model=XML_PATH, weights=BIN_PATH)
         self.executable_network = ie_core_handler.load_network(network, device_name='CPU', num_requests=1)
@@ -118,7 +121,16 @@ class HookDet(object):
         det = non_max_suppression(output, self.conf_thres, self.iou_thres, None, False, max_det=10)[0]
         det[:, :4] = self.rescale(img.shape[2:], det[:, :4], img_src.shape).round()
         res = det.cpu().numpy().tolist()
-        results = {"results": str(res)}
+        desc = 2
+        cls_list = []
+        for item in res:
+            if item[4]<0.5: continue
+            else: cls_list.append(item[-1])
+        if 1 in cls_list and 0 not in cls_list:
+            desc = 0
+        if 1 in cls_list and 0 in cls_list:
+            desc = 1
+        results = {"info": str(res), 'result': desc}
         print(results)
         return [results]
 
@@ -170,6 +182,7 @@ if __name__ == '__main__':
 
         data = [{"body": image_bytes}]
         data = handle(data, ctx)
-        det = eval(data[0]['results']) 
+        print(data)
+        det = eval(data[0]['info']) 
 
     # draw_img(cv2.imread(path), det)
