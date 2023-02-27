@@ -6269,7 +6269,7 @@
 			<framework value="onnx" />
 			<input_model value="DIR/best_stop_aug_ckpt.onnx" />
 			<model_name value="best_stop_aug_ckpt" />
-			<output_dir value="/fastdata/computervision/liuxingyu/shared/projects/FeedFactory/YOLOv6/runs/train/exp100/weights/best_stop_aug_ckpt_openvino" />
+			<output_dir value="/fastdata/computervision/liuxingyu/shared/projects/FeedFactory/det_model/YOLOv6/runs/train/exp3/weights/best_stop_aug_ckpt_openvino" />
 		</conversion_parameters>
 		<legacy_frontend value="False" />
 	</rt_info>
